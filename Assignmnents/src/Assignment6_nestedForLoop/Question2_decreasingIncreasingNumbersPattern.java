@@ -25,18 +25,17 @@ public class Question2_decreasingIncreasingNumbersPattern {
 		 
 		 */
 		
-		int raw, column;
-
-		for (raw = 7; raw > 1; raw--) {
-			for (column = 1; column <= raw; column++) {
-				System.out.print(column + " ");
+		
+		for (int i = 7; i > 1; i--) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(j + " ");
 			}
 			System.out.println();
 		}
 
-		for (raw = 1; raw <= 7; raw++) {
-			for (column = 1; column <= raw; column++) {
-				System.out.print(column + " ");
+		for (int i = 1; i <= 7; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print(j + " ");
 			}
 			System.out.println();
 		}
