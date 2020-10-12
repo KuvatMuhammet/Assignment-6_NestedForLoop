@@ -14,16 +14,15 @@ public class Question6_TrianglePatternWithIcreasingNumbers {
 				5 9 12 14 15
 		 */
 
-		int rows, columns, total;
+		
+		for (int i = 1; i <= 5; i++) {
 
-		for (rows = 1; rows <= 5; rows++) {
-
-			total = rows;
+			int total = i;
 			System.out.print(total + " ");
 
-			for (columns = 1; columns < rows; columns++) {
+			for (int j = 1; j < i; j++) {
 
-				total += (5 - columns);
+				total += (5 - j);
 				System.out.print(total + " ");
 			}
 			System.out.println();
