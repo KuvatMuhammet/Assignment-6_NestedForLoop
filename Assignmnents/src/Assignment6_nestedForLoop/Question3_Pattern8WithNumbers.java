@@ -24,15 +24,14 @@ public class Question3_Pattern8WithNumbers {
 				1 2 3 4 5 6 7
 		 */
 		
-		int raw, space, column;
+		
+		for (int i = 1; i <= 7; i++) {
 
-		for (raw = 1; raw <= 7; raw++) {
-
-			for (space = 1; space < raw; space++) {
+			for (int k = 1; k < i; k++) {
 				System.out.print(" ");
 			}
 
-			for (column = raw; column <= 7; column++) {
+			for (int j = i; j <= 7; j++) {
 				System.out.print(column + " ");
 			}
 
@@ -40,13 +39,13 @@ public class Question3_Pattern8WithNumbers {
 
 		}
 
-		for (raw = 6; raw >= 1; raw--) {
+		for (int i = 6; i >= 1; i--) {
 
-			for (space = 1; space < raw; space++) {
+			for (int k = 1; k < i; k++) {
 				System.out.print(" ");
 			}
 
-			for (column = raw; column <= 7; column++) {
+			for (int j = i; j <= 7; j++) {
 				System.out.print(column + " ");
 			}
 
