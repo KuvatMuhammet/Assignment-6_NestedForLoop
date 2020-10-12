@@ -16,11 +16,10 @@ public class Question4_PatternWith_1_and_0 {
 						1010101
  			 */
 		
-			int raw, column;
-
-			for (raw = 1; raw <= 6; raw++) {
-				for (column = 1; column <= raw; column++) {
-					if (column % 2 == 1) {
+		
+			for (int i = 1; i <= 6; i++) {
+				for (int j = 1; j <= i; j++) {
+					if (j % 2 == 1) {
 						System.out.print(1);
 					} else {
 						System.out.print(0);
