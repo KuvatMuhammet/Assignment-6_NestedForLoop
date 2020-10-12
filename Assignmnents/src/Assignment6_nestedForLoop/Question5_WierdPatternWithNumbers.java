@@ -16,14 +16,13 @@ public class Question5_WierdPatternWithNumbers {
 				7777777
 		 */
 
-		int raw, space, column;
-
-		for (raw = 1; raw <= 7; raw++) {
-			for (space = 6; space > raw - 1; space--) {
+		
+		for (int i = 1; i <= 7; i++) {
+			for (int k = 6; k > i - 1; k--) {
 				System.out.print("1");
 			}
-			for (column = 1; column <= raw; column++) {
-				System.out.print(raw + "");
+			for (int j = 1; j <= i; j++) {
+				System.out.print(i + "");
 			}
 			System.out.println();
 		}
