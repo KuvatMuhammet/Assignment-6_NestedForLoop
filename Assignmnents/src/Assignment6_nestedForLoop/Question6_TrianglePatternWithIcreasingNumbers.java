@@ -14,15 +14,19 @@ public class Question6_TrianglePatternWithIcreasingNumbers {
 				5 9 12 14 15
 		 */
 
+		Scanner scan = new Scanner(System.in);
 		
-		for (int i = 1; i <= 5; i++) {
+		System.out.println("Enter the numbers of row:");
+		int numbersOfRow = scan.nextInt(); 
+		
+		for (int i = 1; i <= numbersOfRow; i++) {
 
 			int total = i;
 			System.out.print(total + " ");
 
 			for (int j = 1; j < i; j++) {
 
-				total += (5 - j);
+				total += (numbersOfRow - j);
 				System.out.print(total + " ");
 			}
 			System.out.println();
