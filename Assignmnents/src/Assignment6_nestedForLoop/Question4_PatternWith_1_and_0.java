@@ -16,8 +16,12 @@ public class Question4_PatternWith_1_and_0 {
 						1010101
  			 */
 		
+			Scanner scan = new Scanner(System.in);
 		
-			for (int i = 1; i <= 6; i++) {
+			System.out.println("Enter the numbers of row:");
+			int numbersOfRow = scan.nextInt(); 
+		
+			for (int i = 1; i <= numbersOfRow; i++) {
 				for (int j = 1; j <= i; j++) {
 					if (j % 2 == 1) {
 						System.out.print(1);
