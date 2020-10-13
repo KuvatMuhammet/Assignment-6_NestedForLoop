@@ -23,15 +23,18 @@ public class Question3_Pattern8WithNumbers {
 				 2 3 4 5 6 7
 				1 2 3 4 5 6 7
 		 */
+		Scanner scan = new Scanner(System.in);
 		
+		System.out.println("Enter the numbers of row:");
+		int numbersOfRow = scan.nextInt();
 		
-		for (int i = 1; i <= 7; i++) {
+		for (int i = 1; i <= numbersOfRow; i++) {
 
 			for (int k = 1; k < i; k++) {
 				System.out.print(" ");
 			}
 
-			for (int j = i; j <= 7; j++) {
+			for (int j = i; j <= numbersOfRow; j++) {
 				System.out.print(column + " ");
 			}
 
@@ -39,13 +42,13 @@ public class Question3_Pattern8WithNumbers {
 
 		}
 
-		for (int i = 6; i >= 1; i--) {
+		for (int i = numbersOfRow - 1; i >= 1; i--) {
 
 			for (int k = 1; k < i; k++) {
 				System.out.print(" ");
 			}
 
-			for (int j = i; j <= 7; j++) {
+			for (int j = i; j <= numbersOfRow; j++) {
 				System.out.print(column + " ");
 			}
 
