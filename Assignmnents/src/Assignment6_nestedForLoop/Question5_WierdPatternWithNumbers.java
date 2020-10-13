@@ -16,9 +16,13 @@ public class Question5_WierdPatternWithNumbers {
 				7777777
 		 */
 
+		Scanner scan = new Scanner(System.in);
 		
-		for (int i = 1; i <= 7; i++) {
-			for (int k = 6; k > i - 1; k--) {
+		System.out.println("Enter the numbers of row:");
+		int numbersOfRow = scan.nextInt();
+		
+		for (int i = 1; i <= numbersOfRow; i++) {
+			for (int k = numbersOfRow - 1; k > i - 1; k--) {
 				System.out.print("1");
 			}
 			for (int j = 1; j <= i; j++) {
