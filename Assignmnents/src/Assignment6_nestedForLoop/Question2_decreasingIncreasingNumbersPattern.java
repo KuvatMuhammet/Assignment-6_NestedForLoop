@@ -25,15 +25,19 @@ public class Question2_decreasingIncreasingNumbersPattern {
 		 
 		 */
 		
+		Scanner scan = new Scanner(System.in);
 		
-		for (int i = 7; i > 1; i--) {
+		System.out.println("Enter the numbers of row:");
+		int numbersOfRow = scan.nextInt();
+		
+		for (int i = numbersOfRow; i > 1; i--) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print(j + " ");
 			}
 			System.out.println();
 		}
 
-		for (int i = 1; i <= 7; i++) {
+		for (int i = 1; i <= numbersOfRow; i++) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print(j + " ");
 			}
